@@ -4,11 +4,14 @@
 
 1. Download and install [Docker](https://docs.docker.com/docker-for-windows/install/ "Docker Installation").
 2. Login and switch to Windows Containers.
+
    ![Switch to Windows Containers](../master/media/docker.png)
 3. Go to Windows 'System Information' (Start -> System Information) and retrieve the version of Windows you are using under 'Version'.
+
    ![System Information](../master/media/systeminfo.png)
 4. Search for your Windows version on [Microsoft's Windows Server Core Images section](https://hub.docker.com/_/microsoft-windows-servercore?tab=description "Microsoft servercore") for using the correct image.
    For example, my version is 17134 so I search for 17134:
+   
    ![System Information](../master/media/version.png)
 5. Any tag on the left most column can be used as long as the OsVersion lines up with your computer's version, for this example I use the tag '1803' as it was the simplest one and lined up with my version of 17134.
    You **must** use the correct tag otherwise it will fail to pull the image.
